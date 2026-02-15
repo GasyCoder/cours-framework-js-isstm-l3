@@ -1,7 +1,6 @@
 # Cours complet : Les Frameworks JavaScript
 
-### Du Frontend au Backend — Support de cours pour Licence 3 Informatique
-
+### Du Frontend au Backend
 ---
 
 ## Table des matières
