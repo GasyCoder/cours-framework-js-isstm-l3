@@ -1,13 +1,6 @@
 # Cours complet : Les Frameworks JavaScript
 
-## Du Frontend au Backend — Support de cours pour Licence 3 Informatique
-
----
-
-**Auteur :** Support de cours universitaire - BEZARA Florent  
-**Niveau :** Licence 3 — Informatique  
-**Prérequis :** Bases solides en HTML, CSS, JavaScript (ES6+), notions de programmation orientée objet  
-**Volume horaire indicatif :** 40 à 50 heures (cours + TP)
+### Du Frontend au Backend — Support de cours pour Licence 3 Informatique
 
 ---
 
