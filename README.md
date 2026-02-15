@@ -3299,4 +3299,4 @@ Combinez les exercices précédents : créez un frontend React ou Vue qui consom
 ---
 
 *Ce support de cours est publié sous licence Creative Commons CC BY-SA 4.0.*  
-*Dernière mise à jour : 2025*
+*Dernière mise à jour : 2026*
