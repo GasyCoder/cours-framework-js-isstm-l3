@@ -25,9 +25,18 @@
 //console.log(etudiant); // "Aina"
 // console.log(etudiant.age); // 22
 
-let a = 10;
-let b = a;
+// let a = 10;
+// let b = a;
 
-b = 20;
+// b = 20;
 
-console.log(a); // 10
+// console.log(a); // 10
+
+
+let note = 40;
+
+if (note >= 50) {
+  console.log("Admis");
+} else {
+  console.log("Échec");
+}
