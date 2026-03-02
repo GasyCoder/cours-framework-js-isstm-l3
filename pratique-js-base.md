@@ -67,7 +67,7 @@ Exemple avec `const` :
 const pays = "Madagascar";
 console.log(pays);
 
-// pays = "France"; // Erreur (interdit)
+pays = "France"; // Erreur (interdit)
 ```
 
 Explication :
@@ -153,7 +153,7 @@ Un objet permet de regrouper plusieurs informations dans une seule variable.
 let etudiant = {
     nom: "Aina",
     age: 22,
-    estInscrit: true
+    estInscrit: true,
 };
 ```
 
