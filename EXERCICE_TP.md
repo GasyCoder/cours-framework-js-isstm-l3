@@ -1,4 +1,4 @@
-# TP Pratique : Ma Liste de Tâches Dynamique 📝
+# TP Pratique : Ma Liste de Tâches Dynamique 
 
 **Objectif :** Créer une application simple qui permet d'ajouter des tâches à une liste, de les marquer comme "faites" et de les supprimer.
 
@@ -86,4 +86,4 @@ Lors de la création du `<li>`, ajoutez-lui un écouteur de clic qui lui ajoute/
 ## 3. Objectif Final
 Votre application doit permettre d'ajouter des tâches à l'infini, de les barrer en cliquant dessus, et de les supprimer avec le bouton rouge.
 
-**Bonne chance !** 🚀
+**Bonne chance !** 

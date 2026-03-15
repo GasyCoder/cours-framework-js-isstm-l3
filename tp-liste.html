@@ -4,55 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP - Liste de Tâches</title>
-    <style>
-        body { 
-            font-family: sans-serif; 
-            display: flex; 
-            justify-content: center; 
-            padding: 50px; 
-            background: #f0f2f5; 
-            margin: 0;
-        }
-        .container { 
-            background: white; 
-            padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-            width: 350px; 
-        }
-        h1 { text-align: center; color: #333; }
-        .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
-        input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px; outline: none; }
-        button#add-btn { padding: 10px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
-        button#add-btn:hover { background: #218838; }
-        
-        ul { list-style: none; padding: 0; }
-        li { 
-            background: #fff; 
-            border-bottom: 1px solid #eee; 
-            padding: 10px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        li:hover { background: #fafafa; }
-        li:last-child { border-bottom: none; }
-        
-        .done { text-decoration: line-through; color: gray; opacity: 0.6; }
-        
-        .delete-btn { 
-            background: #ff4d4d; 
-            color: white; 
-            border: none; 
-            padding: 5px 10px; 
-            border-radius: 4px; 
-            cursor: pointer; 
-            font-size: 12px; 
-        }
-        .delete-btn:hover { background: #cc0000; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -65,6 +17,6 @@
             <!-- Les tâches s'afficheront ici via JS -->
         </ul>
     </div>
-    <script src="tp-script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

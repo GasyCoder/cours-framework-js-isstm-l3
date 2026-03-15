@@ -1,5 +1,5 @@
 // TP : MA LISTE DE TÂCHES DYNAMIQUE 📝
-// Fichier : tp-script.js
+// Fichier : js/script.js
 
 // Étape 1 : Sélectionnez vos éléments (Input, Bouton, Liste)
 // ...
