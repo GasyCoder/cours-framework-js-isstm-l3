@@ -8,7 +8,7 @@ Ce TP utilise tout ce que vous avez vu : **Variables, Fonctions, DOM et Événem
 
 ## 1. Préparation (HTML/CSS)
 
-Copiez ce code dans votre fichier `index.html` pour avoir une base propre.
+Copiez ce code dans votre fichier **`tp-liste.html`** pour avoir une base propre.
 
 ```html
 <!DOCTYPE html>
@@ -45,17 +45,17 @@ Copiez ce code dans votre fichier `index.html` pour avoir une base propre.
             <!-- Les tâches s'afficheront ici -->
         </ul>
     </div>
-    <script src="script.js"></script>
+    <script src="tp-script.js"></script>
 </body>
 </html>
 ```
 
 ---
 
-## 2. Le travail à faire (dans `script.js`)
+## 2. Le travail à faire (dans `tp-script.js`)
 
 ### Étape 1 : Sélectionner les éléments
-Dans votre fichier `script.js`, commencez par sélectionner :
+Dans votre fichier **`tp-script.js`**, commencez par sélectionner :
 - L'input texte (`#task-input`)
 - Le bouton ajouter (`#add-btn`)
 - La liste `<ul>` (`#task-list`)
