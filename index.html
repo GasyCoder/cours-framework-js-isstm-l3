@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Basics</title>
+    <title>Démo DOM - Compteur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #compteur {
+            font-size: 5rem;
+            margin: 1rem 0;
+            transition: color 0.3s ease;
+        }
+        button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        #btn-plus { background-color: #28a745; }
+        #btn-moins { background-color: #dc3545; }
+        button:hover { opacity: 0.8; }
+    </style>
 </head>
 <body>
-  <h1>Test JS</h1>
 
- <script src="script.js"></script>
+    <div class="container">
+        <h1>Démo Manipulation du DOM</h1>
+        <p>Le score change en direct grâce au JavaScript !</p>
+        
+        <h2 id="compteur">0</h2>
+        
+        <button id="btn-plus">Ajouter 1 (+)</button>
+        <button id="btn-moins">Retirer 1 (-)</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

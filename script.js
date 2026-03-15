@@ -1,42 +1,29 @@
-// let prenom = "Aina";
+// --- MINI-PROJET : COMPTEUR DE CLICS ---
 
-// console.log("Bonjour " + prenom);
+// 1. Déclarer les variables (pour stocker le score)
+let score = 0;
 
-// prenom = "Raja";
-// console.log("Hey: " + prenom);
+// 2. Sélectionner les éléments du DOM (ceux du index.html)
+const affichage = document.getElementById("compteur");
+const btnPlus = document.getElementById("btn-plus");
+const btnMoins = document.getElementById("btn-moins");
 
-// prenom = "Florent";
-// console.log("Salama " + prenom);
+// 3. Écouter les événements (clics sur les boutons)
 
-// const pays = "Madagascar";
-// console.log(pays);
+// Action quand on clique sur "Plus"
+btnPlus.addEventListener("click", function() {
+    score = score + 1; // On change la donnée (le score)
+    
+    // On met à jour le DOM (l'affichage)
+    affichage.textContent = score;
+    affichage.style.color = "#28a745"; // On change la couleur en vert
+});
 
-// console.log(5 == "5");  // true
-// console.log(5 === "5"); // false
-
-// let age = 10;
-// console.log(age + 5); // "105" (concaténation)
-// let etudiant = {
-//     nom: "Aina",
-//     age: 22,
-//     estInscrit: true,
-//     prix: 1500
-// };
-//console.log(etudiant); // "Aina"
-// console.log(etudiant.age); // 22
-
-// let a = 10;
-// let b = a;
-
-// b = 20;
-
-// console.log(a); // 10
-
-
-let note = 40;
-
-if (note >= 50) {
-  console.log("Admis");
-} else {
-  console.log("Échec");
-}
+// Action quand on clique sur "Moins"
+btnMoins.addEventListener("click", function() {
+    score = score - 1; // On change la donnée (le score)
+    
+    // On met à jour le DOM (l'affichage)
+    affichage.textContent = score;
+    affichage.style.color = "#dc3545"; // On change la couleur en rouge
+});
