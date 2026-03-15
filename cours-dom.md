@@ -1,4 +1,4 @@
-# Cours : Manipulation du DOM en JavaScript (Simple et Clair)
+# Cours : Manipulation du DOM en JavaScript
 
 Le **DOM** (Document Object Model) est le "pont" entre votre fichier HTML et votre code JavaScript. C'est grâce au DOM que vous pouvez changer le contenu d'une page, ajouter des couleurs, ou réagir à un clic sans recharger la page.
 
@@ -82,7 +82,7 @@ btn.addEventListener("click", function() {
 });
 ```
 
-### Bref: ```js addEventListener  ``` est une méthode JavaScript qui permet d’écouter un événement sur un élément HTML.
+### Bref: ``` addEventListener  ``` est une méthode JavaScript qui permet d’écouter un événement sur un élément HTML.
 
 ### 4.2 La Saisie (`input`)
 Réagir quand l'utilisateur écrit dans un champ.
