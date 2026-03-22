@@ -11,7 +11,7 @@
 4. [Partie I — Le Frontend](#partie-i--le-frontend)
    - [Chapitre 4 : Les concepts fondamentaux du frontend moderne](#chapitre-4--les-concepts-fondamentaux-du-frontend-moderne)
    - [Chapitre 5 : React.js — La bibliothèque de composants](#chapitre-5--reactjs--la-bibliothèque-de-composants)
-   - [Chapitre 6 : Vue.js — Le framework progressif](#chapitre-6--vuejs--le-framework-progressif)
+   - [Chapitre 6 : Vue.js — Le framework progressif](./cours/vuejs-fondamentaux.md) ([TP Installation](./tp/tp-vuejs-installation.md))
    - [Chapitre 7 : Angular — Le framework complet](#chapitre-7--angular--le-framework-complet)
    - [Chapitre 8 : Comparaison et choix d'un framework frontend](#chapitre-8--comparaison-et-choix-dun-framework-frontend)
 5. [Partie II — Le Backend](#partie-ii--le-backend)
