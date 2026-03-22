@@ -55,13 +55,56 @@ Dans un **Panier d'Achat**, dès que l'utilisateur clique sur "+" pour une quant
 ---
 
 ### C. Les Composants SFC (Single File Components)
-Dans Vue, tout est composant. Un fichier `.vue` contient la structure, la logique et le style.
+Dans Vue, tout est composant. Un fichier `.vue` contient la structure, la logique et le style au même endroit.
+
+**Analogie de la Maison :**
+- `<template>` : **Les murs** (la structure HTML).
+- `<script setup>` : **Le cerveau/l'électricité** (la logique JS).
+- `<style>` : **La décoration** (le design CSS).
+
+**Structure type d'un fichier .vue :**
+```vue
+<script setup>
+// Logique (JS)
+</script>
+
+<template>
+  <!-- Affichage (HTML) -->
+</template>
+
+<style scoped>
+/* Design (CSS) */
+</style>
+```
 
 **Analogie des LEGO :**
 Construire un site web devient un assemblage de briques indépendantes. Si vous modifiez la brique "Bouton", tous les boutons du site changent d'un coup.
 
+---
+
+### D. La Donnée : ref() vs reactive()
+En Vue 3, on doit déclarer si une donnée est réactive (surveillée).
+
+**Analogies :**
+1. **ref() - La Boîte Unique** : Imaginez une boîte qui contient **une seule valeur** (un chiffre, un nom). Pour changer la valeur à l'intérieur, vous devez ouvrir la boîte (utiliser `.value` en JS).
+   - *Idéal pour :* `ref(0)`, `ref("Aina")`, `ref(true)`.
+2. **reactive() - L'Armoire à tiroirs** : Imaginez une armoire avec plusieurs tiroirs. Vous changez directement le contenu d'un tiroir sans ouvrir l'armoire entière.
+   - *Idéal pour :* Les objets complexes `reactive({ nom: "Aina", age: 20 })`.
+
 **Exemple concret :**
-Une **Barre de Navigation (Header)**. On la crée une seule fois dans `Header.vue`. Elle est ensuite "appelée" sur toutes les pages. Si on ajoute un lien "Contact" dans ce fichier, il apparaît partout sur le site.
+```javascript
+const score = ref(0); // On utilise score.value pour changer le chiffre
+const etudiant = reactive({ nom: "Aina", note: 15 }); // On utilise etudiant.note directement
+```
+
+---
+
+### E. L'outil indispensable : Vue DevTools
+**Analogie du Scanner à rayons X :**
+Si votre site a un bug, vous ne voyez pas ce qui se passe "dans le cerveau" (la mémoire). **Vue DevTools** est une extension pour votre navigateur (Chrome/Firefox) qui vous permet de voir en direct :
+- Quelles sont les variables actuelles.
+- Si le DOM Virtuel s'est mis à jour.
+- Comment les composants communiquent entre eux.
 
 ---
 
