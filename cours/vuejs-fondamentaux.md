@@ -22,10 +22,47 @@ Un Framework apporte :
 
 ## 2. Le Data Binding (Liaison de données)
 
-Pour bien comprendre, comparons la méthode "classique" et la méthode avec Framework.
+### Définitions techniques
+Le **Data Binding** est le mécanisme qui permet de lier les données (le code JavaScript) à l'interface (le HTML). Lorsque la donnée change, l'interface se met à jour automatiquement.
 
-### A. La méthode "classique" (Sans Framework)
-En JavaScript pur (Vanilla), on doit manipuler manuellement chaque élément. C'est ce qu'on appelle la manipulation impérative du DOM.
+On distingue deux types principaux :
+
+#### A. Liaison Unidirectionnelle (One-Way Data Binding)
+La donnée va du **JavaScript vers le HTML**. Si la variable change dans le script, le texte change sur la page, mais l'utilisateur ne peut pas modifier la variable depuis la page.
+- **Exemple Vue :** Utilisation des moustaches `{{ }}`.
+
+```html
+<p>Bonjour {{ nomUser }} !</p>
+
+<script setup>
+  const nomUser = "Alice"; 
+</script>
+```
+
+#### B. Liaison Bidirectionnelle (Two-Way Data Binding)
+La donnée circule dans les **deux sens**. C'est très utilisé dans les formulaires.
+1. Si le JavaScript change, le champ de saisie se met à jour.
+2. Si l'utilisateur tape du texte dans le champ, la variable JavaScript est modifiée instantanément.
+- **Exemple Vue :** Utilisation de la directive `v-model`.
+
+```html
+<input v-model="message" placeholder="Tapez quelque chose...">
+<p>Vous avez écrit : {{ message }}</p>
+
+<script setup>
+  import { ref } from 'vue';
+  const message = ref(""); 
+</script>
+```
+
+---
+
+### C. Comparaison pratique : Pourquoi utiliser le Data Binding ?
+
+Voici la différence concrète pour afficher et mettre à jour un texte simple.
+
+#### 1. La méthode "classique" (Sans Framework)
+En JavaScript pur (Vanilla), on doit manipuler manuellement chaque élément. C'est la manipulation **impérative** : on doit donner des ordres précis au navigateur.
 
 ```html
 <!-- HTML -->
@@ -43,8 +80,8 @@ En JavaScript pur (Vanilla), on doit manipuler manuellement chaque élément. C'
 </script>
 ```
 
-### B. La méthode moderne (Avec Framework - Vue.js)
-Avec Vue.js, on ne s'occupe plus d'aller chercher les éléments. On lie simplement la donnée au HTML. Si la donnée change, le HTML suit **automatiquement**.
+#### 2. La méthode moderne (Avec Framework - Vue.js)
+Avec Vue.js, on utilise la manipulation **déclarative**. On lie simplement la donnée au HTML et le framework s'occupe de la mise à jour.
 
 ```html
 <!-- SCRIPT -->
@@ -57,16 +94,6 @@ Avec Vue.js, on ne s'occupe plus d'aller chercher les éléments. On lie simplem
   <p>{{ message }}</p>
 </template>
 ```
-
----
-
-### C. Définitions techniques
-Le **Data Binding** est le mécanisme qui permet de lier les données (le code JavaScript) à l'interface (le HTML). 
-
-On distingue deux types principaux :
-
-#### 1. Liaison Unidirectionnelle (One-Way Data Binding)
-...
 
 ---
 
