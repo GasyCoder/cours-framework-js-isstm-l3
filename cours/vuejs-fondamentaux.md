@@ -28,8 +28,11 @@ Le **Data Binding** est le mécanisme qui permet de lier les données (le code J
 On distingue deux types principaux :
 
 #### A. Liaison Unidirectionnelle (One-Way Data Binding)
-La donnée va du **JavaScript vers le HTML**. Si la variable change dans le script, le texte change sur la page, mais l'utilisateur ne peut pas modifier la variable depuis la page.
-- **Exemple Vue :** Utilisation des moustaches `{{ }}`.
+C'est une route à **sens unique**. La donnée part de votre code (JavaScript) pour s'afficher sur l'écran (HTML).
+
+- **L'analogie du Panneau d'Affichage :** Imaginez un panneau publicitaire dans la rue. L'entreprise peut changer l'affiche (le code change), et tout le monde voit la nouvelle publicité (l'écran change). Mais les passants ne peuvent pas changer l'affiche eux-mêmes.
+- **En résumé :** Le code commande, l'écran obéit.
+- **Exemple Vue :** On utilise les doubles accolades `{{ }}`.
 
 ```html
 <p>Bonjour {{ nomUser }} !</p>
@@ -40,14 +43,17 @@ La donnée va du **JavaScript vers le HTML**. Si la variable change dans le scri
 ```
 
 #### B. Liaison Bidirectionnelle (Two-Way Data Binding)
-La donnée circule dans les **deux sens**. C'est très utilisé dans les formulaires.
-1. Si le JavaScript change, le champ de saisie se met à jour.
-2. Si l'utilisateur tape du texte dans le champ, la variable JavaScript est modifiée instantanément.
-- **Exemple Vue :** Utilisation de la directive `v-model`.
+C'est une route à **double sens**. La donnée circule tout le temps entre le code (JS) et l'écran (HTML).
+
+- **L'analogie du Google Docs :** Imaginez que vous travaillez sur un document partagé. Si vous écrivez une phrase, votre collègue la voit apparaître (le code vers l'écran). Si votre collègue efface un mot, il disparaît aussi chez vous (l'écran vers le code). Tout le monde est synchronisé en temps réel !
+- **En résumé :** Si le code change, l'écran change. Si l'utilisateur change quelque chose sur l'écran (dans un formulaire), le code change aussi.
+- **Exemple Vue :** On utilise la directive `v-model`.
 
 ```html
-<input v-model="message" placeholder="Tapez quelque chose...">
-<p>Vous avez écrit : {{ message }}</p>
+<!-- Si l'utilisateur tape son nom, la variable "message" change toute seule dans le code -->
+<input v-model="message" placeholder="Tapez votre nom...">
+
+<p>Bienvenue, {{ message }} !</p>
 
 <script setup>
   import { ref } from 'vue';
